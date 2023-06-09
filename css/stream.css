@@ -1,0 +1,313 @@
+*
+{
+margin: 0;
+padding: 0;
+font-family: 'Libre Franklin', sans-serif;
+}
+.barra
+{
+height: 110px;
+width: 100%;
+background-color: red;
+display: flex;
+}
+.principal
+{
+	background-color: #320E66;
+	height: 100%;
+	width: 50%;
+}
+.caja
+{
+display: flex;
+gap: 15px;
+}
+.caja img
+{
+width: 25px;
+height: auto;
+left: 15%;
+top: 6%;
+position: absolute;
+cursor: pointer;
+}
+.caja2 img
+{
+width: 25px;
+height: auto;
+left: 18%;
+top: 6%;
+position:absolute;
+cursor: pointer;
+}
+.logo img
+{
+width: 110px;
+height: auto;
+position: absolute;
+left: 5%;
+}
+.secundario
+{
+	background-color: #320E66;
+	height: 100%;
+	width: 50%;
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.tercero input
+{
+	width: 450px;
+	height: 40px;
+	border-radius: 15px;
+	margin-right: 30px;
+	text-align: center;
+	background-color: #D2E2E8;
+}
+.primero input
+{
+height: 40px;
+width: 90px;
+border-radius: 15px;
+margin: 10px;
+background-color: #8560BB;
+font-weight: 900;
+color: white;
+cursor: pointer;
+}
+.segundo input
+{
+height: 40px;
+width: 90px;
+border-radius: 15px;
+margin: 15px;	
+background-color: #8560BB;
+font-weight: 900;
+color: white;
+cursor: pointer;
+border-style: solid;
+}
+.cuarto img
+{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-right: 18px;
+cursor: pointer;
+}
+input[type="checkbox"]
+{
+position: fixed;
+right: 728px;
+top: 24px;
+width: 50px;
+height: 50px;
+z-index: 1;
+cursor: pointer;
+opacity: 0;
+
+}
+.icono
+{
+	position: fixed;
+	right: 728px;
+	top: 24px;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	pointer-events: none;
+
+}
+
+.icono:before
+{
+content: 'close';
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+color: pink;
+text-align: center;
+line-height: 50px;
+text-transform: uppercase;
+font-weight: 700;
+height: 40px;
+width: 90px;
+border-radius: 15px;
+margin: 10px;
+background-color: #8560BB;
+font-weight: 900;
+color: white;
+cursor: pointer;
+border-style: solid;
+}
+input[type="checkbox"]:checked ~ .icono:before
+{
+content: 'menu';
+background-color: red;
+height: 40px;
+width: 90px;
+border-radius: 15px;
+margin: 10px;
+background-color: #8560BB;
+font-weight: 900;
+color: white;
+cursor: pointer;
+}
+ul
+{
+	position: fixed;
+	top: 0px;
+	left: 0;
+	margin: 0;
+	padding: 50px 20px;
+	box-sizing: border-box;
+	width: 300px;
+	height: 100vh;
+	background: #1F0642;
+	transition: 0.5s;
+	z-index: 1;
+	overflow-y: auto;
+}
+ul li
+{
+	list-style: none;
+}
+ul li a
+{
+	display: block;
+	color: #fff;
+	padding: 5px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 700px;
+	transition: 0.5s;
+}
+ul li a:hover
+{
+	transform:  translateX(10px);
+	color: #ff0;
+}
+input[type="checkbox"]:checked ~ ul
+{
+left: -500px;	
+}
+.vivo
+{
+display: flex;
+width: 100%;
+}
+.foto img
+{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin:20px;
+}
+.caja
+{
+margin-top: 20px;
+color: white;
+text-decoration: none;
+}
+.caja a
+{
+color: white;
+text-decoration: none;
+}
+.caja h3
+{
+color: #C199FD;
+font-weight: 400;
+}
+.video
+{
+width: 100%;
+height: 85vh;
+
+    background-color: #320E66;
+    box-shadow: 3px 2px 101px 0px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 3px 2px 101px 0px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 3px 2px 101px 0px rgba(0,0,0,0.75) inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+.video iframe
+{
+width: 760px;
+height: 415px;
+}
+.chat
+{
+width: 500px;
+height: 90%;
+background-color: #320E66;
+    box-shadow: 3px 2px 101px 0px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 3px 2px 101px 0px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 3px 2px 101px 0px rgba(0,0,0,0.75) inset;
+    display: flex;
+
+}
+.chat
+{
+display: flex;
+flex-direction: column;
+}
+.user
+{
+display: flex;
+margin: 7px;
+}
+.user h4
+{
+	color: pink;
+}
+.user h5
+{
+	color: white;
+}
+.nombre
+{
+display: flex;
+position: absolute;
+width: 650px;
+}
+.nombre img
+{
+border-radius: 50%;
+width: 60px;
+height: 60px;
+}
+.nombre h5
+{
+color: #FF2447;
+}
+.letra
+{
+color: white;
+margin: 10px;
+}
+.letra h3
+{
+font-weight: 400;
+color: #C199FD;
+}
+.etiquetas
+{
+display: flex;
+gap:10px;
+}
+.etiquetas h4
+{
+background: #8560BB;
+border-radius: 10px;
+width: 105px;
+height: 20px;
+text-align: center;
+margin-top: 5px;
+}
